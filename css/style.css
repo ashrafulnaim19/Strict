@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    header{
+    
+    margin: auto;
+    
+    width: 80%;
+    }
+    .header{
+    
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    display: flex;
+    
+    padding: 15px;
+    }
+    .logo{
+    
+    width: 20%;
+    }
+    .logo img{
+    
+    }
+    nav{
+    width: 40%;
+    }
+    nav ul{
+    
+    display: flex;
+    
+    list-style: none;
+    
+    justify-content: end;
+    }
+    nav ul li{
+    
+    }
+    nav ul li a{
+    
+    color: black;
+    
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    
+    margin-left: 70px;
+    }
+    nav ul li a:hover{
+    color: #15a4fa;
+    }
+    .Banner{
+    position: relative;
+    background-image: url(../images/banner.png);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    .Banner h1{
+    
+    text-transform: uppercase;
+    
+    font-size: 100px;
+    
+    color: #fff;
+    }
+    .Banner p{
+    
+    color: #fff;
+    
+    padding: 30px 0;
+    }
+    button{
+    border: none;
+    background: transparent;
+    color: #fff;
+    text-transform: capitalize;
+    border: 1px solid #15a4fa;
+    padding:  10px 20px;
+    transition: .4s all ease-in-out;
+    border-radius: 5px;
+    }
+    .banner-cont{
+    
+    width: 30%;
+    
+    text-align: center;
+    
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
+    
+    position: absolute;
+    
+    top: 50%;
+    }
+    .banner-cont span{
+    
+    display: block;
+    
+    height: 2px;
+    
+    background: #15a4fa;
+    
+    width: 100%;
+    }
+    button:hover{
+    background: #15a4fa;
+    }
+    .icon{
+    font-size: 30px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    color: #fff;
+    transform: translate(-50%, -100px);
+    animation: updwon 1s linear infinite;
+    
+    animation-direction: alternate;
+    
+    
+    }
+    
+    @keyframes updwon {
+    0%{
+    bottom: 50px;
+    }
+    100%{
+    bottom: 120px;
+    }
+    }
+    
+    .simple_section{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+    }
+    
+    .simple_con{
+    background: #f6f9f9;
+    }
+    .simple_con h2{
+    
+    padding-bottom: 25px;
+    }
+    .simple_con p{
+    
+    }
+    
+    .feature_sec{
+    
+    display: flex;
+    
+    width: 80%;
+    
+    margin: auto;
+    
+    }
+    .simple_section a{
+    
+    }
+    .simple_section img{
+    
+    
+    
+    }
+    .iteams{
+    
+    width: 20%;
+    
+    margin: auto;
+    
+    background: skyblue;
+    
+    padding: 15px 10px;
+    
+    }
+    
+    .feature_sec h2{
+    
+    padding: 20px;
+    
+    }
+    .feature_sec p{
+    
+    }
+    .gellary_sec{
+    
+    background: #f6f9f9;
+    
+    text-align: center;
+    
+    padding: 50px;
+    }
+    .gellary_con h2{
+    
+    }
+    .gellary_con p{
+    
+    margin-bottom: 50px;
+    
+    }
+    .gellary_box{
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .gellary_con{width: 80%;margin: auto;}
+    .gellary_iteams{
+    position: relative;
+    margin: 5px;
+    }
+    .gellary_iteams::before{
+    content:'';
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: #15a4fa;
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+    }
+    .gellary_iteams:hover::before{
+    width: 100%;
+    opacity: 0.5;
+    }
+    .gellary_iteams img{
+    height: 100%;
+    width: 100%;
+    }
+    .show_items{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        width: 120px;
+    }
+    .gellary_iteams:hover .show_items{
+        opacity: 1;
+        transition: .4s all ease-in-out;
+    } 
+    .show_items ul{
+    
+list-style: none;
+    
+margin: 0;
+    
+padding: 0;
+    
+display: flex;
+    
+justify-content: space-between;
+    }
+    .show_items ul li {
+    
+border: 1px solid #fff;
+    
+padding: 10px;
+    
+border-radius: 5px;
+    
+width: 30px;
+    
+text-align: center;
+    
+line-height: 30px;
+    
+color: #fff;
+    }
+    .show_items ul li:hover{
+        font-size: 25px;
+        border: 2px solid #fff;
+    }
+    .show_items ul li i{
+    }
+    
+    .stay_with{
+        background-image: url(../images/benner2.png);
+        color: #fff;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .stay_header{text-align: center;padding-top: 75px;padding-bottom: 50px;width: 40%;margin: auto;}
+    .stay_header h3{
+    
+    font-size: 41px;
+    }
+    .stay_header h6{
+    font-size: 19px;
+    margin-bottom: 60px;
+    color: #999999;
+    }
+    form{
+    
+    }
+    form input{
+    
+background: transparent;
+    
+border: none;
+    
+border: 1px solid #999999;
+    
+width: 555px;
+    
+margin-bottom: 20px;
+    
+border-radius: 5px;
+    
+padding: 20px;
+    
+font-size: 15px;
+    }
+    form textarea{
+    
+    border: none;
+    
+    border: 1px solid #999999;
+    
+    width: 555px;
+    
+    height: 160px;
+    
+    margin-bottom: 20px;
+    
+    border-radius: 5px;
+    
+    padding: 20px;
+    
+    font-size: 15px;
+    
+    background: transparent;
+    }
+    form .send{
+    display: flex;
+    }
+    .check_box{
+    
+    }
+    .check_box input{
+        
+    }
+    .check_box p{
+    color: #999999;
+    font-size: 15px;
+    }
+    .check {
+
+padding: 0;
+
+margin: 0;
+
+width: 50%;
+
+text-align: start;
+
+display: flex;
+
+align-items: center;
+}
+    .check p {
+    }
+
+    .button{
+    width: 50%;
+    text-align: end;
+    }
+    .button input{
+        
+    background: transparent;
+        
+    height: 45px;
+        
+    width: 140px;
+        
+    margin: auto;
+        
+    padding: 0;
+        
+    font-size: 18px;
+        
+    border-color: #15a4fa;
+    transition: .4s all ease-in-out;
+        
+    color: #fff;
+    }
+    .button input:hover{
+        background: #15a4fa;
+    }
+    form ::placeholder{
+        color: #999999;
+    }
+    footer{
+    
+    }
+    footer .content{
+    
+    display: flex;
+    
+    width: 70%;
+    
+    margin: auto;
+    
+    justify-content: space-between;
+    
+    padding: 30px;
+    }
+    footer .copyright{
+    
+    }
+    footer .copyright p{
+        
+    font-size: 15px;
+    }
+    .social_media{
+    
+    display: flex;
+    }
+    .social_media ul{list-style: none;margin-left: 10px;font-size: 15px;}
+    .social_media ul li{
+    
+height: 30px;
+    
+width: 30px;
+    
+background: #15a4fa;
+    
+text-align: center;
+    
+line-height: 30px;
+    
+color: #fff;
+    }
+    .social_media ul li i{
+        
+    }
+    .check input{
+        
+width: 15px;
+        
+margin: 0;
+        
+padding: 0;
+        
+margin-right: 10px;
+        
+margin-left: 5px;
+    }
+    
+    
+    
+    
+    
+    
